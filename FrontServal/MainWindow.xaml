@@ -1,0 +1,28 @@
+﻿<Window x:Class="FrontServal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrontServal"
+        xmlns:wpfanimated="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        Title="MainWindow" Height="Auto" Width="Auto" Topmost="True" WindowState="Maximized">
+    <Grid>
+        <Image wpfanimated:ImageBehavior.AnimatedSource="sevaldance1.gif"
+               wpfanimated:ImageBehavior.RepeatBehavior="1"
+               wpfanimated:ImageBehavior.AnimateInDesignMode="False"
+               wpfanimated:ImageBehavior.AutoStart="True" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="1,1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Window>
